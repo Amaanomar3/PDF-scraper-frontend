@@ -1,0 +1,11 @@
+<div style="text-align:center">
+	<div class="imgCont"><img #PDF id="PDF" [src]="url" *ngIf="url" (load)="getScale()"></div>
+
+  <div class="file-upload">
+    <input class="file-uploadInput" id="upload" type="file" (change)="selectFile($event)">
+    <label class="file-uploadLabel" for="upload">Upload Files</label>
+    <div id="coords">{{ pointerCoords | json }}</div>
+    <div class="output"></div>
+</div>
+
+
